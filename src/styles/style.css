@@ -1,6 +1,6 @@
 /** CSS STYLE **/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
 :root {
   --white: #fff;
@@ -21,13 +21,9 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   color: var(--font-color);
-  background-image: url(../img/background.png);
 }
 
-.page-header,
-.section-header,
-.summary,
-.main-topic {
+.title {
   margin: 0;
   font-family: 'Neucha', cursive;
   line-height: 1.2em;
@@ -49,7 +45,7 @@ body {
   font-size: 34px;
 }
 
-.orange {
+.title-color {
   color: var(--main-color);
 }
 
@@ -63,6 +59,24 @@ body {
 }
 
 .container {
+  position: relative;
   width: 1110px;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/background.png);
+  background-color: var(--light);
+  opacity: 0.7;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  content: "";
 }
