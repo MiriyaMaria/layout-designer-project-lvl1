@@ -22,7 +22,7 @@ body {
   line-height: 1.6em;
   color: var(--font-color);
   background-image: url(../img/background.png);
-  }
+}
 
 .page-header,
 .section-header,
@@ -35,6 +35,10 @@ body {
 
 .page-header {
   font-size: 72px;
+}
+
+.page-header::after {
+  content: url(../img/main.png);
 }
 
 .section-header {
