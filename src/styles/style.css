@@ -30,10 +30,16 @@ body {
 }
 
 .page-header {
+  position: relative;
+  margin-bottom: 240px;
   font-size: 72px;
 }
 
 .page-header::after {
+  position: absolute;
+  top: -45px;
+  left: 296px;
+  height: 525px;
   content: url(../img/main.png);
 }
 
@@ -56,6 +62,7 @@ body {
 
 .content p {
   margin-top: 0;
+  break-inside: avoid-column;
 }
 
 .container {
@@ -65,7 +72,13 @@ body {
   padding: 100px 0;
 }
 
-.container::before {
+.back-decoration-light {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.back-decoration-light::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -73,10 +86,24 @@ body {
   bottom: 0;
   background-image: url(../img/background.png);
   background-color: var(--light);
-  opacity: 0.7;
+  opacity: 0.9;
   background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   content: "";
+}
+
+.btn-more {
+  margin-top: 40px;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  border: none;
+}
+
+.btn-more>a {
+  text-decoration: none;
+  color: var(--white);
 }
