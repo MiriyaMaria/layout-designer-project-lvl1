@@ -31,19 +31,26 @@ body {
 
 .page-header {
   position: relative;
-  margin-bottom: 240px;
+  margin-bottom: 200px;
   font-size: 72px;
+}
+
+.front {
+  position: relative;
+  z-index: 2;
 }
 
 .page-header::after {
   position: absolute;
-  top: -45px;
-  left: 296px;
+  top: -55px;
+  right: -280px;
+  z-index: 1;
   height: 525px;
   content: url(../img/main.png);
 }
 
 .section-header {
+  margin-bottom: 30px;
   font-size: 60px;
 }
 
@@ -76,6 +83,7 @@ body {
   position: relative;
   margin: 0;
   width: 100%;
+  overflow: hidden;
 }
 
 .back-decoration-light::before {
@@ -95,7 +103,9 @@ body {
 }
 
 .btn-more {
-  margin-top: 40px;
+  width: 148px;
+  height: 49px;
+  margin-top: 23px;
   padding: 12px 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -106,4 +116,24 @@ body {
 .btn-more>a {
   text-decoration: none;
   color: var(--white);
+}
+
+.video {
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto -200px auto;
+  width: 919px;
+  height: 569px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.centered-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.centered-title > p {
+  margin: 0;
 }
