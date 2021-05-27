@@ -338,7 +338,10 @@ body {
   left: 0;
   width: 70px;
   height: 50px;
-  background-image: url(img/send.svg);
+  background-image: url(../img/send.svg);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
   content: "";
 }
 
