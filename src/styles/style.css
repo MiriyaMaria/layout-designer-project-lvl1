@@ -290,3 +290,79 @@ body {
   background-color: var(--white);
 }
 
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+  margin: 0 auto;
+  background-color: var(--main-dark);
+  color: var(--white);
+}
+
+.subscribe .title {
+  padding-left: 55px;
+  width: 485px;
+}
+
+.subscribe form {
+  width: 540px;
+  padding: 38px 0 40px 0;
+}
+
+.send-info {
+  display: flex;
+  margin: 9px 0 0 0;
+}
+
+#e-mail {
+  width: 393px;
+  height: 20px;
+  padding: 15px;
+  border: none;
+}
+
+.btn-send {
+  position: relative;
+  width: 70px;
+  height: 50px;
+  padding: 0;
+  background-color: #fe8a02;
+  border: none;
+}
+
+.btn-send::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 50px;
+  background-image: url(img/send.svg);
+  content: "";
+}
+
+.agreement {
+  margin: 0;
+  font-size: 12px;
+}
+
+.agreement a {
+  color: var(--white);
+}
+
+.contacts {
+  margin-top: 76px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contacts > a,
+.contacts a:visited {
+  color: #1085c5;
+}
+
+
+
+
+
