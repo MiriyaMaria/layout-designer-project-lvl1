@@ -44,11 +44,15 @@ body {
 
 .page-header::after {
   position: absolute;
-  top: -55px;
-  right: -280px;
+  top: -48px;
+  right: -270px;
   z-index: 1;
+  background-image: url(../img/main.png);
+  background-size: 1083px 525px;
+  display: block;
+  width: 1083px;
   height: 525px;
-  content: url(../img/main.png);
+  content: "";
 }
 
 .section-header {
@@ -87,6 +91,7 @@ body {
   margin: 0;
   width: 100%;
   overflow: hidden;
+  background-color: var(--light);
 }
 
 .back-decoration-light::before {
@@ -96,12 +101,13 @@ body {
   right: 0;
   bottom: 0;
   background-image: url(../img/background.png);
-  background-color: var(--light);
-  opacity: 0.9;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
   background-origin: border-box;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: top;
   content: "";
 }
 
@@ -132,6 +138,10 @@ body {
 
 .video-section {
   text-align: center;
+}
+
+.video-section > p {
+  margin-bottom: 30px;
 }
 
 .centered-title {
@@ -247,6 +257,7 @@ body {
   width: 100%;
   overflow: hidden;
   color: var(--white);
+  background-color: var(--brown);
 }
 
 .back-decoration-dark::before {
@@ -256,12 +267,13 @@ body {
   right: 0;
   bottom: 0;
   background-image: url(../img/background.png);
-  background-color: var(--brown);
-  opacity: 0.9;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
   background-origin: border-box;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: top;
   content: "";
 }
 
