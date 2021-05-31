@@ -416,7 +416,7 @@ body {
   text-align: center;
 }
 
-.contacts > a,
+.contacts a,
 .contacts a:visited {
   color: #1085c5;
 }
