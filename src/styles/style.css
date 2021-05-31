@@ -177,7 +177,7 @@ body {
 }
 
 .nav-menu {
-  padding: 200px 0 100px 0;
+  padding: 100px 0 100px 0;
 }
 
 .back-black {
@@ -205,6 +205,10 @@ body {
   margin-top: 40px;
 }
 
+.card > p {
+  margin-bottom: 0;
+}
+
 .card:first-child {
   padding: 0;
 
@@ -230,7 +234,7 @@ body {
   margin: 0;
 }
 
-.card:hover:nth-child(n+2) {
+.card:not(:first-child):hover {
   color: var(--white);
 
   background-color: var(--main-color);
@@ -238,7 +242,7 @@ body {
   transition: 1s;
 }
 
-.card:hover:nth-child(n+2) > .title-color {
+.card:not(:first-child):hover > .title-color {
   color: var(--white);
 
   transition: 1s;
