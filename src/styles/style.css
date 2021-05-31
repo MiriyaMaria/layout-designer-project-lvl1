@@ -188,14 +188,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1110px;
-  margin: 0 auto;
 }
 
 .card {
   display: block;
-  width: 302px;
-  height: 275px;
+  box-sizing: border-box;
+  width: 350px;
   margin: 0 0 20px 0;
   padding: 24px;
 
@@ -208,9 +206,6 @@ body {
 }
 
 .card:first-child {
-  width: 350px;
-  height: 323px;
-  margin: 0 0 20px 0;
   padding: 0;
 
   color: var(--white);
@@ -231,7 +226,7 @@ body {
 }
 
 .card:nth-of-type(n+3) {
-  height: 300px;
+
   margin: 0;
 }
 
