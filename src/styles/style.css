@@ -431,11 +431,8 @@ body {
   }
   
   .page-header::after {
-    position: absolute;
-    top: 350px;
-    left: 0;
-    z-index: 1;
-  
+    position: static;
+      
     display: block;
     width: 100%;
     height: 100%;
@@ -459,25 +456,9 @@ body {
     padding: 100px 20px;
   }
 
-  .btn-more {
-    display: inline-block;
-    width: auto;
-    height: 25px;
-    margin-top: 25px;
-    padding: 12px 24px;
-    border: none;
-  
-    color: var(--white);
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-  
-    background-color: var(--main-color);
-  }
-
   .video {
-    width: auto;
-    height: auto;
+    width: 80vh;
+    height: 80vh;
   }
 
   .subscribe {
@@ -487,7 +468,6 @@ body {
   
   .subscribe form {
     width: 100%;
-    padding: 38px 0 40px 0;
     text-align: center;
   }
   
@@ -498,40 +478,19 @@ body {
   }
 
   .send-info {
-    display: flex;
-    margin: 9px 0 0 0;
     justify-content: center;
   }
   
   #e-mail {
-    width: 40%;
+    width: fit-content;
   }
   
   .btn-send {
-    position: relative;
-  
     width: 8%;
-    height: 50px;
-    padding: 0;
-    border: none;
-  
-    background-color: #fe8a02;
   }
   
   .btn-send::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-  
     width: 100%;
-    height: 50px;
-  
-    background-image: url(../img/send.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: border-box;
-  
-    content: "";
   }
   
 }
