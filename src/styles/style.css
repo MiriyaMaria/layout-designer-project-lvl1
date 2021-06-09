@@ -420,3 +420,118 @@ body {
 .contacts a:visited {
   color: #1085c5;
 }
+
+@media (max-width: 1100px) {
+  body {
+    min-width: 0;
+  }
+
+  .page-header {
+    font-size: 96px;
+  }
+  
+  .page-header::after {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    z-index: 1;
+  
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    background-image: url(../img/main.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  
+    content: "";
+  }
+  
+  .content {
+    column-count: auto;
+    column-gap: 0;
+    column-width: auto;
+  }
+   
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 20px;
+  }
+
+  .btn-more {
+    display: inline-block;
+    width: auto;
+    height: 25px;
+    margin-top: 25px;
+    padding: 12px 24px;
+    border: none;
+  
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+    background-color: var(--main-color);
+  }
+
+  .video {
+    width: auto;
+    height: auto;
+  }
+
+  .subscribe {
+    justify-content: unset;
+    width: 100%;
+  }
+  
+  .subscribe form {
+    width: 100%;
+    padding: 38px 0 40px 0;
+    text-align: center;
+  }
+  
+  .subscribe .title {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .send-info {
+    display: flex;
+    margin: 9px 0 0 0;
+    justify-content: center;
+  }
+  
+  #e-mail {
+    width: 40%;
+  }
+  
+  .btn-send {
+    position: relative;
+  
+    width: 8%;
+    height: 50px;
+    padding: 0;
+    border: none;
+  
+    background-color: #fe8a02;
+  }
+  
+  .btn-send::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 50px;
+  
+    background-image: url(../img/send.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+  
+    content: "";
+  }
+  
+}
