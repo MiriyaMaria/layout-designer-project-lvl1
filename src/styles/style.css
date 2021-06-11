@@ -522,4 +522,8 @@ body {
   .btn-send::before {
     width: 100%;
   } 
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
+  }
 }
